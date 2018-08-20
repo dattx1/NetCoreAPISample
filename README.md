@@ -1,5 +1,6 @@
 Update Starup.cs Constructor to 
 
+```
  public Startup(IHostingEnvironment env)
   {
       var builder = new ConfigurationBuilder()
@@ -21,11 +22,17 @@ Update Starup.cs Constructor to
 
       //Configuration = config.Build();
   }
-        
+```    
+
 Open Pakage Manager Console and type:
+```
  - update-database
+ ```
+ 
  
  Update Startup.cs to
+ 
+ ```
 public Startup(IHostingEnvironment env)
 {
     var builder = new ConfigurationBuilder()
@@ -45,3 +52,4 @@ public Startup(IHostingEnvironment env)
 
     Configuration = config.Build();
 }
+```
