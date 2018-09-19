@@ -7,9 +7,8 @@ namespace Common
     public enum UserTypeEnum
     {
         Administrator = 1,
-        Driver = 2,
-        Customer = 3,
-        Partner = 4
+        Staff = 2,
+        Manager = 3
     }
 
 }

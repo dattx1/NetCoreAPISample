@@ -38,6 +38,7 @@ namespace SampleNetCoreAPI
                 .SetBasePath(Directory.GetCurrentDirectory())
                 .AddJsonFile("appsettings.json");
 
+            // Configuration = builder.Build();
             var connectionStringConfig = builder.Build();
 
             ///ADd Config From Database
