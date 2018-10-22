@@ -26,7 +26,7 @@ namespace SampleNetCoreAPI.Controllers
         }
 
         [HttpPost]
-        [Authorize]
+        [CustomAuthorization(UserTypeEnum.Staff)]
         [Route("GetAllBlogs")]
         public IActionResult GetAllBlogs()
         {
@@ -45,7 +45,7 @@ namespace SampleNetCoreAPI.Controllers
                 Email = "dattx1@gmail.com",
                 ExpireTime = DateTime.Now.AddYears(1),
                 UserName = "dattx1@gmail.com",
-                UserType = new List<string>() { "Administrator" }
+                UserType = new List<string>() { "Staff" }
             });
             return Json(AccessToken);
         }
